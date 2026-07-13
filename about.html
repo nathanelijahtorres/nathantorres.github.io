@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan Elijah Torres | About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-slate-100 bg-cover bg-center bg-fixed text-slate-900 transition-colors dark:bg-slate-900 dark:text-slate-100">
+    <div class="flex min-h-screen flex-col bg-white/70 dark:bg-black/60">
+      <header class="border-b border-slate-300/80 backdrop-blur-md dark:border-white/20">
+        <nav class="mx-auto w-full max-w-6xl px-4 py-3 sm:px-6">
+          <div class="flex items-center justify-between gap-3 md:hidden">
+            <a href="index.html" class="text-sm font-semibold tracking-wide text-slate-900 dark:text-white sm:text-base">Nathan Elijah Torres</a>
+            <div class="flex items-center gap-2">
+              <button data-theme-toggle type="button" class="inline-flex items-center rounded-full bg-slate-200 p-2 text-slate-900 hover:bg-slate-300 dark:bg-white/20 dark:text-white dark:hover:bg-white/30" aria-label="Toggle dark mode">
+                <span data-theme-icon class="material-icons-outlined text-lg">dark_mode</span>
+              </button>
+              <button data-menu-toggle type="button" class="inline-flex items-center rounded-full bg-slate-200 p-2 text-slate-900 hover:bg-slate-300 dark:bg-white/20 dark:text-white dark:hover:bg-white/30 md:hidden" aria-label="Toggle menu" aria-expanded="false">
+                <span data-menu-icon class="material-icons-outlined text-lg">menu</span>
+              </button>
+            </div>
+          </div>
+          <div data-mobile-menu class="hidden pt-3 md:hidden">
+            <div class="flex flex-col gap-2 text-sm">
+              <a data-mobile-link href="index.html" class="rounded-full px-3 py-1 text-slate-700 hover:bg-slate-200 dark:text-white/85 dark:hover:bg-white/15">Home</a>
+              <a data-mobile-link href="about.html" class="rounded-full bg-slate-200 px-3 py-1 text-slate-900 dark:bg-white/20 dark:text-white">About</a>
+              <a data-mobile-link href="blogs.html" class="rounded-full px-3 py-1 text-slate-700 hover:bg-slate-200 dark:text-white/85 dark:hover:bg-white/15">Blogs</a>
+            </div>
+          </div>
+          <div class="hidden md:grid md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-4">
+            <a href="index.html" class="text-sm font-semibold tracking-wide text-slate-900 dark:text-white sm:text-base">Nathan Elijah Torres</a>
+            <div class="flex items-center justify-center gap-2 text-sm">
+              <a href="index.html" class="inline-flex min-w-[88px] justify-center rounded-full px-4 py-1 text-slate-700 hover:bg-slate-200 dark:text-white/85 dark:hover:bg-white/15">Home</a>
+              <a href="about.html" class="inline-flex min-w-[88px] justify-center rounded-full bg-slate-200 px-4 py-1 text-slate-900 dark:bg-white/20 dark:text-white">About</a>
+              <a href="blogs.html" class="inline-flex min-w-[88px] justify-center rounded-full px-4 py-1 text-slate-700 hover:bg-slate-200 dark:text-white/85 dark:hover:bg-white/15">Blogs</a>
+            </div>
+            <div class="justify-self-end">
+              <button data-theme-toggle type="button" class="inline-flex items-center rounded-full bg-slate-200 p-2 text-slate-900 hover:bg-slate-300 dark:bg-white/20 dark:text-white dark:hover:bg-white/30" aria-label="Toggle dark mode">
+                <span data-theme-icon class="material-icons-outlined text-lg">dark_mode</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="mx-auto flex w-full max-w-6xl flex-1 items-center px-4 py-10 sm:px-6">
+        <section class="w-full rounded-2xl border border-slate-300/80 bg-white/75 p-6 shadow-2xl backdrop-blur-md dark:border-white/20 dark:bg-black/30 sm:p-8">
+          <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">About Me</h1>
+          <div class="mt-5 space-y-4 text-sm leading-relaxed text-slate-700 dark:text-slate-100 sm:text-base">
+            <p>
+              I am Nathan Elijah Torres, a dedicated System Administrator focused on keeping infrastructure stable, secure, and efficient across day-to-day operations.
+              I enjoy building reliable systems, improving performance, and solving operational challenges through practical automation.
+            </p>
+            <p>
+              As I continue to grow in my career, I am actively transitioning toward CloudOps and DevOps, where I can combine systems expertise with cloud platforms,
+              CI/CD, infrastructure as code, and observability. My goal is to help teams ship faster while maintaining resilience, security, and operational excellence.
+            </p>
+          </div>
+          <div class="mt-7">
+            <a href="Nathan%20Torres%20-%20System%20Administrator.pdf" target="_blank" class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-5 py-2.5 font-medium text-white hover:bg-sky-500">
+              <span class="material-icons-outlined text-base">description</span>
+              View Resume
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="mt-auto border-t border-slate-300/80 py-4 text-center text-xs text-slate-700 dark:border-white/20 dark:text-slate-200 sm:text-sm">
+        &copy; <span data-year></span> Nathan Elijah Torres. All rights reserved.
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
