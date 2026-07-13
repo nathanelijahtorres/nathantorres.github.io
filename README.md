@@ -11,9 +11,9 @@ The project is intentionally simple and static:
 | `index.html` | Home page with profile image, role, socials, and resume button |
 | `about.html` | About page with professional summary |
 | `blogs.html` | Blogs index page with cards linking to individual posts |
-| `blog-homelab-vlans.html` | Blog post: homelab VLAN segmentation |
-| `blog-mini-pc-k8s.html` | Blog post: lightweight Kubernetes mini-PC cluster |
-| `blog-monitoring-stack.html` | Blog post: Prometheus + Grafana monitoring stack |
+| `blog-vlan-segmentation.html` | Blog post: homelab VLAN segmentation |
+| `blog-dual-isp-failover.html` | Blog post: dual ISP failover with Converge and Starlink |
+| `blog-self-hosted-vaultwarden.html` | Blog post: self-hosted Vaultwarden setup |
 | `app.js` | Shared client-side behavior: dark mode toggle, mobile hamburger menu, current year in footer, Bing dynamic wallpaper URL |
 | `dp.jpeg` | Profile image used on the homepage |
 | `Nathan Torres - System Administrator.pdf` | Resume file linked from Home and About pages |
