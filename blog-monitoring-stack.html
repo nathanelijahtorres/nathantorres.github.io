@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Building a Monitoring Stack with Prometheus and Grafana | Nathan Elijah Torres</title>
+    <title>Setting up a Self-Hosted Vaultwarden at Home | Nathan Elijah Torres</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -53,21 +53,29 @@
       <main class="mx-auto w-full max-w-4xl flex-1 px-4 py-10 sm:px-6">
         <article class="rounded-2xl border border-slate-300/80 bg-white/75 p-6 shadow-2xl backdrop-blur-md dark:border-white/20 dark:bg-black/30 sm:p-8">
           <p class="inline-flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200">
-            <span class="material-icons-outlined text-base">monitoring</span> Observability
+            <span class="material-icons-outlined text-base leading-none">lock</span>
+            <span>Self-Hosting</span>
           </p>
-          <h1 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Building a Monitoring Stack with Prometheus and Grafana</h1>
+          <h1 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Setting up a Self-Hosted Vaultwarden at Home</h1>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Self-Hosting</span>
+            <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">HomeLab</span>
+            <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Docker</span>
+            <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Vaultwarden</span>
+            <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Security</span>
+          </div>
           <div class="mt-6 space-y-4 text-sm leading-relaxed text-slate-700 dark:text-slate-100 sm:text-base">
             <p>
-              Monitoring became a priority as my homelab workloads grew. I deployed Prometheus for metric collection and Grafana for dashboarding so I could monitor
-              CPU pressure, memory usage, storage trends, and service-level uptime from one place.
+              I wanted a secure password manager that I fully control, so I deployed Vaultwarden in my homelab environment.
+              This gave me ownership of my data while keeping the Bitwarden-compatible experience across devices.
             </p>
             <p>
-              I created focused dashboards for infrastructure health and added alerting thresholds to catch issues before they became outages. This improved my response time
-              and gave me clearer visibility into resource bottlenecks across hosts and containers.
+              I run Vaultwarden as a Docker container, which makes deployment, updates, and rollback workflows cleaner.
+              I paired it with persistent storage and regular backup routines to protect vault data in case of host issues.
             </p>
             <p>
-              Building this stack sharpened my observability mindset: define useful signals, visualize them clearly, and connect alerts to actionable remediation steps.
-              It is now a core part of how I run and improve my homelab.
+              Hosting it at home also gave me practical experience in securing exposed services: HTTPS, controlled access, and operational monitoring.
+              It is now one of the most valuable services in my HomeLab and a strong step in my self-hosting journey.
             </p>
           </div>
           <a href="blogs.html" class="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-sm text-slate-900 hover:bg-slate-300 dark:bg-white/15 dark:text-white dark:hover:bg-white/25">
