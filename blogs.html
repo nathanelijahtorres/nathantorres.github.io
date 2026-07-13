@@ -57,66 +57,90 @@
         </section>
 
         <section class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          <article class="rounded-2xl border border-slate-300/80 bg-white/75 p-5 shadow-xl backdrop-blur-md dark:border-white/20 dark:bg-black/30">
-            <div class="mb-3 inline-flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200">
-              <span class="material-icons-outlined text-base leading-none">hub</span>
-              <span>Networking</span>
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-300/80 bg-white/75 shadow-xl backdrop-blur-md dark:border-white/20 dark:bg-black/30">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="VLAN segmentation switch illustration" class="h-48 w-full object-cover" />
+            <div class="flex flex-1 flex-col p-5">
+              <div class="mb-3 inline-flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200">
+                <span class="material-icons-outlined text-base leading-none">hub</span>
+                <span>Networking</span>
+              </div>
+              <h2 class="text-xl font-semibold hover:text-sky-600 dark:hover:text-sky-400"><a href="blog-vlan-segmentation.html">How I Segmented My Homelab with VLANs</a></h2>
+              <div class="mt-1 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+                <span>13 July 2026</span>
+                <span>•</span>
+                <span>4 mins read</span>
+              </div>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-700 dark:text-slate-100">
+                I separated management, server, and IoT traffic using VLANs and firewall rules to tighten security and reduce noisy east-west traffic inside my lab.
+                This setup made troubleshooting cleaner and helped me test production-like network policies at home.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">Networking</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">HomeLab</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">VLAN</span>
+              </div>
+              <a href="blog-vlan-segmentation.html" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-sm text-slate-900 hover:bg-slate-300 dark:bg-white/15 dark:text-white dark:hover:bg-white/25">
+                <span class="material-icons-outlined text-base">article</span> Read post
+              </a>
             </div>
-            <h2 class="text-xl font-semibold">How I Segmented My Homelab with VLANs</h2>
-            <p class="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-100">
-              I separated management, server, and IoT traffic using VLANs and firewall rules to tighten security and reduce noisy east-west traffic inside my lab.
-              This setup made troubleshooting cleaner and helped me test production-like network policies at home.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2 text-xs">
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Networking</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">HomeLab</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">VLAN</span>
-            </div>
-            <a href="blog-vlan-segmentation.html" class="mt-4 inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-sm text-slate-900 hover:bg-slate-300 dark:bg-white/15 dark:text-white dark:hover:bg-white/25">
-              <span class="material-icons-outlined text-base">article</span> Read post
-            </a>
           </article>
 
-          <article class="rounded-2xl border border-slate-300/80 bg-white/75 p-5 shadow-xl backdrop-blur-md dark:border-white/20 dark:bg-black/30">
-            <div class="mb-3 inline-flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200">
-              <span class="material-icons-outlined text-base leading-none">router</span>
-              <span>Dual ISP Failover</span>
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-300/80 bg-white/75 shadow-xl backdrop-blur-md dark:border-white/20 dark:bg-black/30">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="ISP satellite and globe connection illustration" class="h-48 w-full object-cover" />
+            <div class="flex flex-1 flex-col p-5">
+              <div class="mb-3 inline-flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200">
+                <span class="material-icons-outlined text-base leading-none">router</span>
+                <span>Dual ISP Failover</span>
+              </div>
+              <h2 class="text-xl font-semibold hover:text-sky-600 dark:hover:text-sky-400"><a href="blog-dual-isp-failover.html">Setting up Dual ISP with Converge and Starlink via Failover</a></h2>
+              <div class="mt-1 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+                <span>05 July 2026</span>
+                <span>•</span>
+                <span>5 mins read</span>
+              </div>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-700 dark:text-slate-100">
+                I configured WAN failover between Converge and Starlink using TP-Link Omada, with TP-Link Deco access points for consistent Wi-Fi coverage.
+                I also integrated a UPS so the core network stack stays online during power interruptions.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">Networking</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">HomeLab</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">Failover</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">UPS</span>
+              </div>
+              <a href="blog-dual-isp-failover.html" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-sm text-slate-900 hover:bg-slate-300 dark:bg-white/15 dark:text-white dark:hover:bg-white/25">
+                <span class="material-icons-outlined text-base">article</span> Read post
+              </a>
             </div>
-            <h2 class="text-xl font-semibold">Setting up Dual ISP with Converge and Starlink via Failover</h2>
-            <p class="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-100">
-              I configured WAN failover between Converge and Starlink using TP-Link Omada, with TP-Link Deco access points for consistent Wi-Fi coverage.
-              I also integrated a UPS so the core network stack stays online during power interruptions.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2 text-xs">
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Networking</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">HomeLab</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Failover</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">UPS</span>
-            </div>
-            <a href="blog-dual-isp-failover.html" class="mt-4 inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-sm text-slate-900 hover:bg-slate-300 dark:bg-white/15 dark:text-white dark:hover:bg-white/25">
-              <span class="material-icons-outlined text-base">article</span> Read post
-            </a>
           </article>
 
-          <article class="rounded-2xl border border-slate-300/80 bg-white/75 p-5 shadow-xl backdrop-blur-md dark:border-white/20 dark:bg-black/30">
-            <div class="mb-3 inline-flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200">
-              <span class="material-icons-outlined text-base leading-none">lock</span>
-              <span>Self-Hosting</span>
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-300/80 bg-white/75 shadow-xl backdrop-blur-md dark:border-white/20 dark:bg-black/30">
+            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80" alt="Cybersecurity encrypted lock illustration" class="h-48 w-full object-cover" />
+            <div class="flex flex-1 flex-col p-5">
+              <div class="mb-3 inline-flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200">
+                <span class="material-icons-outlined text-base leading-none">lock</span>
+                <span>Self-Hosting</span>
+              </div>
+              <h2 class="text-xl font-semibold hover:text-sky-600 dark:hover:text-sky-400"><a href="blog-self-hosted-vaultwarden.html">Setting up a Self-Hosted Vaultwarden at Home</a></h2>
+              <div class="mt-1 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+                <span>28 June 2026</span>
+                <span>•</span>
+                <span>4 mins read</span>
+              </div>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-700 dark:text-slate-100">
+                I deployed Vaultwarden on my homelab to securely self-host password management while keeping full control over data and backups.
+                Running it with Docker made updates and maintenance simple and repeatable.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">Self-Hosting</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">HomeLab</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">Docker</span>
+                <span class="rounded-full border border-sky-500/20 px-2.5 py-0.5 text-sky-600 dark:border-sky-400/20 dark:text-sky-400">Security</span>
+              </div>
+              <a href="blog-self-hosted-vaultwarden.html" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-sm text-slate-900 hover:bg-slate-300 dark:bg-white/15 dark:text-white dark:hover:bg-white/25">
+                <span class="material-icons-outlined text-base">article</span> Read post
+              </a>
             </div>
-            <h2 class="text-xl font-semibold">Setting up a Self-Hosted Vaultwarden at Home</h2>
-            <p class="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-100">
-              I deployed Vaultwarden on my homelab to securely self-host password management while keeping full control over data and backups.
-              Running it with Docker made updates and maintenance simple and repeatable.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2 text-xs">
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Self-Hosting</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">HomeLab</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Docker</span>
-              <span class="rounded-full bg-slate-200 px-2.5 py-1 dark:bg-white/15">Security</span>
-            </div>
-            <a href="blog-self-hosted-vaultwarden.html" class="mt-4 inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-2 text-sm text-slate-900 hover:bg-slate-300 dark:bg-white/15 dark:text-white dark:hover:bg-white/25">
-              <span class="material-icons-outlined text-base">article</span> Read post
-            </a>
           </article>
         </section>
       </main>
