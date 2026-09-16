@@ -16,7 +16,7 @@ The project is intentionally simple and static:
 | `blog-self-hosted-vaultwarden.html` | Blog post: self-hosted Vaultwarden setup |
 | `app.js` | Shared client-side behavior: dark mode toggle, mobile hamburger menu, current year in footer, Bing dynamic wallpaper URL |
 | `dp.jpeg` | Profile image used on the homepage |
-| `Nathan Torres - Resume.pdf` | Resume file linked from Home and About pages |
+| `Nathan Torres - DevOps Engineer.pdf` | Resume file linked from Home and About pages |
 
 ## Features
 
